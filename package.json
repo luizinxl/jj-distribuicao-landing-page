@@ -1,0 +1,20 @@
+{
+  "name": "jj-distribuicao-landing-page",
+  "version": "1.0.0",
+  "description": "J&J Distribuição - Landing Page for Insumos para Funilaria e Pintura Automotiva",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "landing-page",
+    "jj-distribuicao",
+    "automotive"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
