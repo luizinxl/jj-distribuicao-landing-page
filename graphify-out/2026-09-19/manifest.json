@@ -12,15 +12,15 @@
     "semantic_hash": ""
   },
   "index-local.html": {
-    "mtime": 1789794566.5358684,
-    "seen": 1789794571.9734066,
-    "ast_hash": "4a4305a930e12f5bd08c1cae2b9c096b",
+    "mtime": 1789794669.8714895,
+    "seen": 1789794675.0438728,
+    "ast_hash": "1d13de138bef12fadce1c0ef8abe9683",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1789794547.9043982,
-    "seen": 1789794571.9734077,
-    "ast_hash": "eb53f2ba0fb7ccfe33ee2a015d496de6",
+    "mtime": 1789794664.407027,
+    "seen": 1789794675.043874,
+    "ast_hash": "9a0a5812abb8b3585a0644a3c032c5c8",
     "semantic_hash": ""
   },
   "images/equipamentos-polimento.png": {
@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "script.js": {
-    "mtime": 1789794559.936837,
-    "seen": 1789794571.9734032,
-    "ast_hash": "1d99c3e1b41ac8654a5009ee7b6fb358",
+    "mtime": 1789794654.99672,
+    "seen": 1789794675.0438693,
+    "ast_hash": "475df8276843c1f78543ace6d14c38dd",
     "semantic_hash": ""
   },
   "server.js": {

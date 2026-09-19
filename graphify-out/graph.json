@@ -61,7 +61,7 @@
       "file_type": "code",
       "norm_label": "getleads()",
       "source_file": "server.js",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "server_savelead",
@@ -73,7 +73,7 @@
       "file_type": "code",
       "norm_label": "savelead()",
       "source_file": "server.js",
-      "source_location": "L35"
+      "source_location": "L36"
     },
     {
       "id": "create_local",
@@ -161,7 +161,7 @@
       "file_type": "code",
       "norm_label": "mime_types",
       "source_file": "server.js",
-      "source_location": "L48"
+      "source_location": "L49"
     },
     {
       "id": "server_path",
@@ -205,7 +205,67 @@
       "file_type": "code",
       "norm_label": "server",
       "source_file": "server.js",
-      "source_location": "L61"
+      "source_location": "L62"
+    },
+    {
+      "id": "readme",
+      "label": "README.md",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "J&J Distribui\u00e7\u00e3o - Landing Page & Cat\u00e1logo Digital",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "readme.md",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_como_executar_localmente",
+      "label": "\ud83d\udee0\ufe0f Como Executar Localmente",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "J&J Distribui\u00e7\u00e3o - Landing Page & Cat\u00e1logo Digital",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udee0\ufe0f como executar localmente",
+      "source_file": "README.md",
+      "source_location": "L30"
+    },
+    {
+      "id": "readme_funcionalidades",
+      "label": "\ud83d\ude80 Funcionalidades",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "J&J Distribui\u00e7\u00e3o - Landing Page & Cat\u00e1logo Digital",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\ude80 funcionalidades",
+      "source_file": "README.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "readme_j_j_distribui\u00e7\u00e3o_landing_page_cat\u00e1logo_digital",
+      "label": "J&J Distribui\u00e7\u00e3o - Landing Page & Cat\u00e1logo Digital",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "J&J Distribui\u00e7\u00e3o - Landing Page & Cat\u00e1logo Digital",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "j&j distribuicao - landing page & catalogo digital",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_tecnologias",
+      "label": "\ud83d\udcbb Tecnologias",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "J&J Distribui\u00e7\u00e3o - Landing Page & Cat\u00e1logo Digital",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udcbb tecnologias",
+      "source_file": "README.md",
+      "source_location": "L24"
     }
   ],
   "links": [
@@ -218,7 +278,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -230,7 +290,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L100",
+      "source_location": "L101",
       "weight": 1.0
     },
     {
@@ -242,7 +302,51 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L120",
+      "source_location": "L121",
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_j_j_distribui\u00e7\u00e3o_landing_page_cat\u00e1logo_digital",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_j_j_distribui\u00e7\u00e3o_landing_page_cat\u00e1logo_digital",
+      "target": "readme_tecnologias",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_j_j_distribui\u00e7\u00e3o_landing_page_cat\u00e1logo_digital",
+      "target": "readme_como_executar_localmente",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_j_j_distribui\u00e7\u00e3o_landing_page_cat\u00e1logo_digital",
+      "target": "readme_funcionalidades",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -330,7 +434,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "server.js",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -352,7 +456,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "server.js",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -374,7 +478,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "server.js",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -385,7 +489,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "server.js",
-      "source_location": "L61",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -400,5 +504,6 @@
       "weight": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "885c1fe23285c9819c3e40c3d13685ef6857bab1"
 }

@@ -1,7 +1,7 @@
 # Graph Report - jj-distribuicao-landing-page  (2026-09-19)
 
 ## Corpus Check
-- 5 files · ~31,035 words
+- 5 files · ~31,638 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary

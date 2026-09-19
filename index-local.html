@@ -116,13 +116,23 @@
     }
   </script>
 </head>
-<body class="bg-[#F8FAFC] text-on-surface antialiased font-body-md text-body-md min-h-screen flex flex-col overflow-x-hidden selection:bg-[#22C55E] selection:text-white">
+<body class="bg-white text-on-surface antialiased font-body-md text-body-md min-h-screen flex flex-col overflow-x-hidden selection:bg-[#22C55E] selection:text-white">
 <!-- A. HEADER FIXO (TopNavBar JSON-aligned & Mobile First) -->
-<header class="bg-surface-container-lowest sticky top-0 z-50 shadow-sm border-b border-outline-variant">
-<div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-4 lg:px-8 h-16">
-<!-- Logo Anchor -->
-<a class="flex items-center gap-2 sm:gap-3" href="#home">
-<img alt="J&amp;J Distribuição Logo" class="h-10 sm:h-12 w-auto object-contain rounded" src="./images/logo.png">
+<header class="bg-white sticky top-0 z-50 shadow-md border-b-2 border-[#CBD5E1]">
+<div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-4 lg:px-8 py-2.5 min-h-[76px]">
+<!-- Logo & Nome da Loja em Grande Destaque -->
+<a class="flex items-center gap-3 sm:gap-4 group cursor-pointer" href="#home" title="J&J Distribuição - Início">
+<div class="p-1 sm:p-1.5 bg-white rounded-xl border-2 border-[#CBD5E1] shadow-xs group-hover:border-primary transition-all duration-200">
+<img alt="J&amp;J Distribuição Logo" class="h-12 sm:h-14 lg:h-16 w-auto object-contain rounded-lg" src="./images/logo.png">
+</div>
+<div class="flex flex-col justify-center">
+<span class="font-extrabold text-xl sm:text-2xl lg:text-3xl tracking-tight text-[#0F172A] leading-none flex items-center gap-1.5">
+J&amp;J <span class="text-primary font-black">DISTRIBUIÇÃO</span>
+</span>
+<span class="text-[10px] sm:text-xs font-bold text-[#64748B] tracking-wider uppercase mt-1">
+Insumos para Funilaria &amp; Pintura
+</span>
+</div>
 </a>
 <!-- Desktop Navigation Links (Anchor Scroll) -->
 <nav class="hidden md:flex items-center space-x-6">
@@ -133,33 +143,33 @@
 </nav>
 <!-- Actions: WhatsApp CTA + Mobile Menu Button -->
 <div class="flex items-center gap-2 sm:gap-3">
-<a id="header-cta-whatsapp" data-wa-origin="Header Superior" data-wa-product="Geral" data-wa-msg="Olá! Gostaria de solicitar um orçamento com a J&J Distribuição." class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded text-xs sm:text-label-lg font-label-lg shadow-sm transition-all duration-150 active:scale-95 cursor-pointer" href="https://wa.me/5511987654321" rel="noopener noreferrer" target="_blank">
+<a id="header-cta-whatsapp" data-wa-origin="Header Superior" data-wa-product="Geral" data-wa-msg="Olá! Gostaria de solicitar um orçamento com a J&J Distribuição." class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg text-xs sm:text-label-lg font-label-lg shadow-sm transition-all duration-150 active:scale-95 cursor-pointer" href="https://wa.me/5511992704530" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[18px] sm:text-[20px]" data-icon="chat">chat</span>
 <span class="hidden sm:inline">Orçamento WhatsApp</span>
 <span class="sm:hidden">WhatsApp</span>
 </a>
 <!-- Mobile Menu Button (Hamburger) -->
-<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 text-[#0F172A] hover:text-primary rounded border border-[#CBD5E1] bg-white transition-colors focus:outline-none cursor-pointer" aria-label="Abrir menu de navegação" aria-expanded="false">
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 text-[#0F172A] hover:text-primary rounded-lg border-2 border-[#CBD5E1] bg-white transition-colors focus:outline-none cursor-pointer" aria-label="Abrir menu de navegação" aria-expanded="false">
 <span class="material-symbols-outlined text-[24px]" id="mobile-menu-icon">menu</span>
 </button>
 </div>
 </div>
 <!-- Mobile Navigation Drawer -->
-<div id="mobile-menu" class="hidden md:hidden bg-white border-b border-[#CBD5E1] px-4 py-3 shadow-lg transition-all duration-200">
+<div id="mobile-menu" class="hidden md:hidden bg-white border-b-2 border-[#CBD5E1] px-4 py-3 shadow-lg transition-all duration-200">
   <nav class="flex flex-col space-y-1">
-    <a class="mobile-nav-link text-primary font-bold py-2.5 px-3 rounded hover:bg-[#F8FAFC] border-b border-[#F1F5F9] flex items-center justify-between" href="#home">
+    <a class="mobile-nav-link text-primary font-bold py-2.5 px-3 rounded-lg hover:bg-[#F8FAFC] border-b border-[#F1F5F9] flex items-center justify-between" href="#home">
       <span>Início</span>
       <span class="material-symbols-outlined text-[18px] text-[#94A3B8]">chevron_right</span>
     </a>
-    <a class="mobile-nav-link text-[#475569] hover:text-primary font-medium py-2.5 px-3 rounded hover:bg-[#F8FAFC] border-b border-[#F1F5F9] flex items-center justify-between" href="#produtos">
+    <a class="mobile-nav-link text-[#475569] hover:text-primary font-medium py-2.5 px-3 rounded-lg hover:bg-[#F8FAFC] border-b border-[#F1F5F9] flex items-center justify-between" href="#produtos">
       <span>Produtos</span>
       <span class="material-symbols-outlined text-[18px] text-[#94A3B8]">chevron_right</span>
     </a>
-    <a class="mobile-nav-link text-[#475569] hover:text-primary font-medium py-2.5 px-3 rounded hover:bg-[#F8FAFC] border-b border-[#F1F5F9] flex items-center justify-between" href="#contato">
+    <a class="mobile-nav-link text-[#475569] hover:text-primary font-medium py-2.5 px-3 rounded-lg hover:bg-[#F8FAFC] border-b border-[#F1F5F9] flex items-center justify-between" href="#contato">
       <span>Contato</span>
       <span class="material-symbols-outlined text-[18px] text-[#94A3B8]">chevron_right</span>
     </a>
-    <a class="mobile-nav-link text-[#475569] hover:text-primary font-medium py-2.5 px-3 rounded hover:bg-[#F8FAFC] flex items-center justify-between" href="#localizacao">
+    <a class="mobile-nav-link text-[#475569] hover:text-primary font-medium py-2.5 px-3 rounded-lg hover:bg-[#F8FAFC] flex items-center justify-between" href="#localizacao">
       <span>Localização</span>
       <span class="material-symbols-outlined text-[18px] text-[#94A3B8]">chevron_right</span>
     </a>
@@ -168,43 +178,44 @@
 </header>
 <main class="flex-grow">
 <!-- B. SEÇÃO 1: HOME (Hero no topo - id="home") -->
-<section class="pt-8 pb-12 lg:pt-14 lg:pb-16 bg-white border-b border-[#E2E8F0]" id="home">
+<section class="pt-8 pb-12 lg:pt-14 lg:pb-16 bg-white border-b-2 border-[#CBD5E1]" id="home">
 <div class="max-w-[1280px] mx-auto px-4 lg:px-8">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-<div class="lg:col-span-7 flex flex-col items-start">
+<!-- Painel com Fundo Escurecido e Contorno -->
+<div class="lg:col-span-7 flex flex-col items-start bg-[#F1F5F9] border-2 border-[#CBD5E1] p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm">
 
 <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-[#0F172A] tracking-tight mb-5">
               Insumos e produtos de alta qualidade para funilaria e pintura automotiva
             </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8 leading-relaxed">
+<p class="font-body-lg text-body-lg text-[#334155] max-w-2xl mb-8 leading-relaxed">
               Distribuição direta para oficinas, funilarias, centros de repintura e profissionais. Pronta entrega de tintas, vernizes, abrasivos, massas e ferramentas das principais marcas do setor.
             </p>
 <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-<a id="hero-cta-whatsapp" data-wa-origin="Hero Principal" data-wa-product="Geral" data-wa-msg="Olá! Gostaria de pedir um orçamento para oficinas e funilarias." class="inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white px-6 py-3.5 rounded font-label-lg text-label-lg shadow-sm transition-all duration-150 active:scale-98 cursor-pointer" href="https://wa.me/5511987654321" rel="noopener noreferrer" target="_blank">
+<a id="hero-cta-whatsapp" data-wa-origin="Hero Principal" data-wa-product="Geral" data-wa-msg="Olá! Gostaria de pedir um orçamento para oficinas e funilarias." class="inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white px-6 py-3.5 rounded-xl font-label-lg text-label-lg shadow-sm transition-all duration-150 active:scale-98 cursor-pointer" href="https://wa.me/5511992704530" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[22px]" data-icon="chat">chat</span>
                 Pedir Orçamento no WhatsApp
               </a>
-<a class="inline-flex items-center justify-center gap-2 border-[1.5px] border-secondary bg-[#EFF6FF] text-secondary hover:bg-[#DBEAFE] px-6 py-3.5 rounded font-label-lg text-label-lg transition-all duration-150" href="#produtos">
+<a class="inline-flex items-center justify-center gap-2 border-2 border-secondary bg-[#EFF6FF] text-secondary hover:bg-[#DBEAFE] px-6 py-3.5 rounded-xl font-label-lg text-label-lg transition-all duration-150" href="#produtos">
 <span class="material-symbols-outlined text-[20px]" data-icon="inventory_2">inventory_2</span>
                 Ver Linha de Produtos
               </a>
 </div>
-<div class="mt-8 pt-6 border-t border-[#E2E8F0] w-full grid grid-cols-1 sm:grid-cols-3 gap-4">
-<div class="flex items-center gap-3">
+<div class="mt-8 pt-6 border-t-2 border-[#CBD5E1] w-full grid grid-cols-1 sm:grid-cols-3 gap-3">
+<div class="flex items-center gap-3 p-3 bg-white border border-[#CBD5E1] rounded-xl shadow-xs">
 <span class="material-symbols-outlined text-[#5B21B6] text-[24px]" data-icon="store">store</span>
 <div>
 <span class="block font-body-md-bold text-body-md-bold text-[#0F172A]">Revendedor Autorizado</span>
 <span class="text-label-sm font-label-sm text-[#64748B]">Retirada imediata</span>
 </div>
 </div>
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-3 p-3 bg-white border border-[#CBD5E1] rounded-xl shadow-xs">
 <span class="material-symbols-outlined text-[#5B21B6] text-[24px]" data-icon="local_shipping">local_shipping</span>
 <div>
 <span class="block font-body-md-bold text-body-md-bold text-[#0F172A]">Logística Ágil</span>
 <span class="text-label-sm font-label-sm text-[#64748B]">Para oficinas parceiras</span>
 </div>
 </div>
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-3 p-3 bg-white border border-[#CBD5E1] rounded-xl shadow-xs">
 <span class="material-symbols-outlined text-[#5B21B6] text-[24px]" data-icon="handshake">handshake</span>
 <div>
 <span class="block font-body-md-bold text-body-md-bold text-[#0F172A]">Grandes Marcas</span>
@@ -214,47 +225,48 @@
 </div>
 </div>
 <div class="lg:col-span-5">
-<div class="relative rounded-lg overflow-hidden border border-[#CBD5E1] bg-[#F8FAFC] shadow-sm">
+<div class="relative rounded-2xl overflow-hidden border-2 border-[#CBD5E1] bg-[#F1F5F9] shadow-sm">
 <img alt="Balcão técnico de atendimento da distribuidora com prateleiras cheias de produtos automotivos" class="w-full h-[260px] sm:h-[360px] lg:h-[460px] object-cover" src="./images/hero-balcao.png">
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- C. SEÇÃO 2: PRODUTOS (Vitrine estática - id="produtos") -->
-<section class="py-12 lg:py-16 bg-[#F8FAFC]" id="produtos">
+<!-- C. SEÇÃO 2: PRODUTOS (Vitrine com cards escurecidos e contornos definidos) -->
+<section class="py-12 lg:py-16 bg-white border-b-2 border-[#CBD5E1]" id="produtos">
 <div class="max-w-[1280px] mx-auto px-4 lg:px-8">
-<div class="max-w-2xl mb-10">
-<div class="inline-flex items-center gap-1.5 text-primary mb-2">
-<span class="material-symbols-outlined text-[20px]" data-icon="category">category</span>
-<span class="text-label-sm font-label-sm tracking-wider uppercase">Catálogo Comercial</span>
+<!-- Cabeçalho da Seção em Painel Contornado -->
+<div class="max-w-3xl mb-10 bg-[#F1F5F9] border-2 border-[#CBD5E1] p-6 sm:p-8 rounded-2xl shadow-sm">
+<div class="inline-flex items-center gap-1.5 text-primary mb-2 bg-[#E2E8F0] px-2.5 py-1 rounded-md border border-[#CBD5E1]">
+<span class="material-symbols-outlined text-[18px]" data-icon="category">category</span>
+<span class="text-xs font-bold tracking-wider uppercase text-primary">Catálogo Comercial</span>
 </div>
 <h2 class="font-headline-xl text-headline-xl text-[#0F172A] tracking-tight mb-2">
             Nossas Linhas de Produtos
           </h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
+<p class="font-body-lg text-body-lg text-[#334155]">
             Trabalhamos com marcas consagradas do mercado de repintura automotiva. Fórmulas profissionais, alta cobertura e desempenho comprovado.
           </p>
 </div>
-<!-- 4 Grid Cards (Mobile First: 1 col mobile, 2 cols tablet, 4 cols desktop) -->
+<!-- 4 Grid Cards (Escurecidos com contorno) -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
 <!-- Card 1 -->
-<div class="bg-white rounded border border-[#CBD5E1] shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between overflow-hidden">
+<div class="bg-[#F1F5F9] rounded-2xl border-2 border-[#CBD5E1] hover:border-primary shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group">
 <div>
-<div class="h-48 bg-[#F1F5F9] overflow-hidden border-b border-[#E2E8F0] flex items-center justify-center p-2">
-<img alt="Tintas &amp; Vernizes Automotivos" class="h-full w-full object-cover rounded-sm" src="./images/tintas-vernizes.png">
+<div class="h-48 bg-[#E2E8F0] overflow-hidden border-b-2 border-[#CBD5E1] flex items-center justify-center p-2">
+<img alt="Tintas &amp; Vernizes Automotivos" class="h-full w-full object-cover rounded-lg group-hover:scale-102 transition-transform duration-200" src="./images/tintas-vernizes.png">
 </div>
 <div class="p-5">
 <div class="mb-2">
-<span class="inline-block text-label-sm font-label-sm text-[#5B21B6] bg-[#F3E8FF] px-2 py-0.5 rounded">Repintura &amp; Acabamento</span>
+<span class="inline-block text-xs font-bold text-[#5B21B6] bg-[#E2E8F0] border border-[#CBD5E1] px-2.5 py-0.5 rounded">Repintura &amp; Acabamento</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-[#0F172A] mb-2">
                   Tintas &amp; Vernizes Automotivos
                 </h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+<p class="font-body-md text-body-md text-[#334155] mb-4">
                   Esmaltes sintéticos, bases poliéster, vernizes 2K alto sólidos, primers anticorrosivos e catalisadores para alto brilho e proteção.
                 </p>
-<div class="space-y-1.5 border-t border-[#F1F5F9] pt-3">
+<div class="space-y-1.5 border-t-2 border-[#CBD5E1] pt-3">
 <div class="flex items-center text-label-sm font-label-sm text-[#475569]">
 <span class="material-symbols-outlined text-[16px] text-secondary mr-1.5" data-icon="check_circle">check_circle</span>
                     Vernizes 2K Alto Sólidos (HS)
@@ -267,29 +279,29 @@
 </div>
 </div>
 <div class="p-5 pt-0">
-<a id="card-cta-tintas" data-wa-origin="Card Produtos" data-wa-product="Tintas & Vernizes Automotivos" data-wa-msg="Olá! Gostaria de consultar preços e prazos para Tintas e Vernizes Automotivos." class="w-full inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white py-2.5 px-4 rounded text-label-lg font-label-lg shadow-sm transition-all duration-150 cursor-pointer" href="https://wa.me/5511987654321?text=Olá,%20gostaria%20de%20consultar%20sobre%20Tintas%20e%20Vernizes" rel="noopener noreferrer" target="_blank">
+<a id="card-cta-tintas" data-wa-origin="Card Produtos" data-wa-product="Tintas & Vernizes Automotivos" data-wa-msg="Olá! Gostaria de consultar preços e prazos para Tintas e Vernizes Automotivos." class="w-full inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white py-2.5 px-4 rounded-xl text-label-lg font-label-lg shadow-sm transition-all duration-150 cursor-pointer" href="https://wa.me/5511992704530?text=Olá,%20gostaria%20de%20consultar%20sobre%20Tintas%20e%20Vernizes" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
                 Consultar via WhatsApp
               </a>
 </div>
 </div>
 <!-- Card 2 -->
-<div class="bg-white rounded border border-[#CBD5E1] shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between overflow-hidden">
+<div class="bg-[#F1F5F9] rounded-2xl border-2 border-[#CBD5E1] hover:border-primary shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group">
 <div>
-<div class="h-48 bg-[#F1F5F9] overflow-hidden border-b border-[#E2E8F0] flex items-center justify-center p-2">
-<img alt="Preparação &amp; Massas Poliéster" class="h-full w-full object-cover rounded-sm" src="./images/preparacao-massas.png">
+<div class="h-48 bg-[#E2E8F0] overflow-hidden border-b-2 border-[#CBD5E1] flex items-center justify-center p-2">
+<img alt="Preparação &amp; Massas Poliéster" class="h-full w-full object-cover rounded-lg group-hover:scale-102 transition-transform duration-200" src="./images/preparacao-massas.png">
 </div>
 <div class="p-5">
 <div class="mb-2">
-<span class="inline-block text-label-sm font-label-sm text-[#5B21B6] bg-[#F3E8FF] px-2 py-0.5 rounded">Correção &amp; Nivelamento</span>
+<span class="inline-block text-xs font-bold text-[#5B21B6] bg-[#E2E8F0] border border-[#CBD5E1] px-2.5 py-0.5 rounded">Correção &amp; Nivelamento</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-[#0F172A] mb-2">
                   Preparação &amp; Massas Poliéster
                 </h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+<p class="font-body-md text-body-md text-[#334155] mb-4">
                   Massas rápidas, massa poliéster leve, primers de enchimento rápido, endurecedores em pasta e aplicadores para correção de chapa.
                 </p>
-<div class="space-y-1.5 border-t border-[#F1F5F9] pt-3">
+<div class="space-y-1.5 border-t-2 border-[#CBD5E1] pt-3">
 <div class="flex items-center text-label-sm font-label-sm text-[#475569]">
 <span class="material-symbols-outlined text-[16px] text-secondary mr-1.5" data-icon="check_circle">check_circle</span>
                     Fácil lixamento e secagem rápida
@@ -302,29 +314,29 @@
 </div>
 </div>
 <div class="p-5 pt-0">
-<a id="card-cta-massas" data-wa-origin="Card Produtos" data-wa-product="Preparação & Massas Poliéster" data-wa-msg="Olá! Gostaria de consultar preços e especificações sobre Massas e Preparação." class="w-full inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white py-2.5 px-4 rounded text-label-lg font-label-lg shadow-sm transition-all duration-150 cursor-pointer" href="https://wa.me/5511987654321?text=Olá,%20gostaria%20de%20consultar%20sobre%20Massas%20e%20Preparação" rel="noopener noreferrer" target="_blank">
+<a id="card-cta-massas" data-wa-origin="Card Produtos" data-wa-product="Preparação & Massas Poliéster" data-wa-msg="Olá! Gostaria de consultar preços e especificações sobre Massas e Preparação." class="w-full inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white py-2.5 px-4 rounded-xl text-label-lg font-label-lg shadow-sm transition-all duration-150 cursor-pointer" href="https://wa.me/5511992704530?text=Olá,%20gostaria%20de%20consultar%20sobre%20Massas%20e%20Preparação" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
                 Consultar via WhatsApp
               </a>
 </div>
 </div>
 <!-- Card 3 -->
-<div class="bg-white rounded border border-[#CBD5E1] shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between overflow-hidden">
+<div class="bg-[#F1F5F9] rounded-2xl border-2 border-[#CBD5E1] hover:border-primary shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group">
 <div>
-<div class="h-48 bg-[#F1F5F9] overflow-hidden border-b border-[#E2E8F0] flex items-center justify-center p-2">
-<img alt="Lixas &amp; Abrasivos" class="h-full w-full object-cover rounded-sm" src="./images/lixas-abrasivos.png">
+<div class="h-48 bg-[#E2E8F0] overflow-hidden border-b-2 border-[#CBD5E1] flex items-center justify-center p-2">
+<img alt="Lixas &amp; Abrasivos" class="h-full w-full object-cover rounded-lg group-hover:scale-102 transition-transform duration-200" src="./images/lixas-abrasivos.png">
 </div>
 <div class="p-5">
 <div class="mb-2">
-<span class="inline-block text-label-sm font-label-sm text-[#5B21B6] bg-[#F3E8FF] px-2 py-0.5 rounded">Desbaste &amp; Mascaramento</span>
+<span class="inline-block text-xs font-bold text-[#5B21B6] bg-[#E2E8F0] border border-[#CBD5E1] px-2.5 py-0.5 rounded">Desbaste &amp; Mascaramento</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-[#0F172A] mb-2">
                   Lixas &amp; Abrasivos
                 </h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+<p class="font-body-md text-body-md text-[#334155] mb-4">
                   Discos de lixa com furo para roto-orbital, lixas d'água grãos 80 a 3000, rolos de esponja abrasiva e fitas crepe de alta temperatura.
                 </p>
-<div class="space-y-1.5 border-t border-[#F1F5F9] pt-3">
+<div class="space-y-1.5 border-t-2 border-[#CBD5E1] pt-3">
 <div class="flex items-center text-label-sm font-label-sm text-[#475569]">
 <span class="material-symbols-outlined text-[16px] text-secondary mr-1.5" data-icon="check_circle">check_circle</span>
                     Grãos P80 até P3000
@@ -337,29 +349,29 @@
 </div>
 </div>
 <div class="p-5 pt-0">
-<a id="card-cta-lixas" data-wa-origin="Card Produtos" data-wa-product="Lixas & Abrasivos" data-wa-msg="Olá! Gostaria de consultar preços para a linha de Lixas e Abrasivos." class="w-full inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white py-2.5 px-4 rounded text-label-lg font-label-lg shadow-sm transition-all duration-150 cursor-pointer" href="https://wa.me/5511987654321?text=Olá,%20gostaria%20de%20consultar%20sobre%20Lixas%20e%20Abrasivos" rel="noopener noreferrer" target="_blank">
+<a id="card-cta-lixas" data-wa-origin="Card Produtos" data-wa-product="Lixas & Abrasivos" data-wa-msg="Olá! Gostaria de consultar preços para a linha de Lixas e Abrasivos." class="w-full inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white py-2.5 px-4 rounded-xl text-label-lg font-label-lg shadow-sm transition-all duration-150 cursor-pointer" href="https://wa.me/5511992704530?text=Olá,%20gostaria%20de%20consultar%20sobre%20Lixas%20e%20Abrasivos" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
                 Consultar via WhatsApp
               </a>
 </div>
 </div>
 <!-- Card 4 -->
-<div class="bg-white rounded border border-[#CBD5E1] shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between overflow-hidden">
+<div class="bg-[#F1F5F9] rounded-2xl border-2 border-[#CBD5E1] hover:border-primary shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group">
 <div>
-<div class="h-48 bg-[#F1F5F9] overflow-hidden border-b border-[#E2E8F0] flex items-center justify-center p-2">
-<img alt="Equipamentos &amp; Polimento" class="h-full w-full object-cover rounded-sm" src="./images/equipamentos-polimento.png">
+<div class="h-48 bg-[#E2E8F0] overflow-hidden border-b-2 border-[#CBD5E1] flex items-center justify-center p-2">
+<img alt="Equipamentos &amp; Polimento" class="h-full w-full object-cover rounded-lg group-hover:scale-102 transition-transform duration-200" src="./images/equipamentos-polimento.png">
 </div>
 <div class="p-5">
 <div class="mb-2">
-<span class="inline-block text-label-sm font-label-sm text-[#5B21B6] bg-[#F3E8FF] px-2 py-0.5 rounded">Aplicação &amp; Detalhamento</span>
+<span class="inline-block text-xs font-bold text-[#5B21B6] bg-[#E2E8F0] border border-[#CBD5E1] px-2.5 py-0.5 rounded">Aplicação &amp; Detalhamento</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-[#0F172A] mb-2">
                   Equipamentos &amp; Polimento
                 </h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+<p class="font-body-md text-body-md text-[#334155] mb-4">
                   Pistolas de pintura profissionais HVLP, filtros reguladores de ar, boinas de lã e espuma, compostos polidores de corte e lustro.
                 </p>
-<div class="space-y-1.5 border-t border-[#F1F5F9] pt-3">
+<div class="space-y-1.5 border-t-2 border-[#CBD5E1] pt-3">
 <div class="flex items-center text-label-sm font-label-sm text-[#475569]">
 <span class="material-symbols-outlined text-[16px] text-secondary mr-1.5" data-icon="check_circle">check_circle</span>
                     Pistolas HVLP bicos 1.3 e 1.4
@@ -372,81 +384,83 @@
 </div>
 </div>
 <div class="p-5 pt-0">
-<a id="card-cta-equipamentos" data-wa-origin="Card Produtos" data-wa-product="Equipamentos & Polimento" data-wa-msg="Olá! Gostaria de consultar sobre Equipamentos de Pintura e Linha de Polimento." class="w-full inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white py-2.5 px-4 rounded text-label-lg font-label-lg shadow-sm transition-all duration-150 cursor-pointer" href="https://wa.me/5511987654321?text=Olá,%20gostaria%20de%20consultar%20sobre%20Equipamentos%20e%20Polimento" rel="noopener noreferrer" target="_blank">
+<a id="card-cta-equipamentos" data-wa-origin="Card Produtos" data-wa-product="Equipamentos & Polimento" data-wa-msg="Olá! Gostaria de consultar sobre Equipamentos de Pintura e Linha de Polimento." class="w-full inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white py-2.5 px-4 rounded-xl text-label-lg font-label-lg shadow-sm transition-all duration-150 cursor-pointer" href="https://wa.me/5511992704530?text=Olá,%20gostaria%20de%20consultar%20sobre%20Equipamentos%20e%20Polimento" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
                 Consultar via WhatsApp
               </a>
 </div>
 </div>
 </div>
-<!-- Banner Inferior de Catálogo -->
-<div class="mt-10 p-6 bg-white border border-[#CBD5E1] rounded flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- Banner Inferior de Catálogo (Escurecido e com contorno) -->
+<div class="mt-10 p-6 sm:p-8 bg-[#F1F5F9] border-2 border-[#CBD5E1] rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
 <div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded bg-[#EFF6FF] border border-[#BFDBFE] flex items-center justify-center text-secondary shrink-0">
+<div class="w-12 h-12 rounded-xl bg-white border-2 border-[#CBD5E1] flex items-center justify-center text-secondary shrink-0 shadow-xs">
 <span class="material-symbols-outlined text-[28px]" data-icon="menu_book">menu_book</span>
 </div>
 <div>
 <h4 class="font-headline-sm text-headline-sm text-[#0F172A]">Precisa de uma marca ou especificação técnica específica?</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Veja nosso catálogo completo em PDF e fichas técnicas.</p>
+<p class="font-body-md text-body-md text-[#334155]">Veja nosso catálogo completo em PDF e fichas técnicas.</p>
 </div>
 </div>
-<a id="banner-cta-catalogo" data-wa-origin="Banner Catálogo PDF" data-wa-product="Catálogo PDF Completo" data-wa-msg="Olá! Gostaria de solicitar o catálogo completo em PDF e tabela técnica da J&J Distribuição." class="inline-flex items-center gap-2 bg-primary hover:bg-[#340075] text-white px-5 py-2.5 rounded text-label-lg font-label-lg whitespace-nowrap transition-colors cursor-pointer" href="https://wa.me/5511987654321?text=Olá,%20gostaria%20de%20solicitar%20o%20catálogo%20em%20PDF" rel="noopener noreferrer" target="_blank">
+<a id="banner-cta-catalogo" data-wa-origin="Banner Catálogo PDF" data-wa-product="Catálogo PDF Completo" data-wa-msg="Olá! Gostaria de solicitar o catálogo completo em PDF e tabela técnica da J&J Distribuição." class="inline-flex items-center gap-2 bg-primary hover:bg-[#340075] text-white px-6 py-3 rounded-xl text-label-lg font-label-lg whitespace-nowrap transition-colors cursor-pointer shadow-sm" href="https://wa.me/5511992704530?text=Olá,%20gostaria%20de%20solicitar%20o%20catálogo%20em%20PDF" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[20px]" data-icon="download">download</span>&nbsp;Catálogo PDF
           </a>
 </div>
 </div>
 </section>
-<!-- D. SEÇÃO 3: CONTATO (id="contato") -->
-<section class="py-12 lg:py-16 bg-white border-y border-[#E2E8F0]" id="contato">
+<!-- D. SEÇÃO 3: CONTATO (Cards escurecidos com contornos) -->
+<section class="py-12 lg:py-16 bg-white border-b-2 border-[#CBD5E1]" id="contato">
 <div class="max-w-[1280px] mx-auto px-4 lg:px-8">
-<div class="max-w-2xl mb-10">
-<div class="inline-flex items-center gap-1.5 text-primary mb-2">
-<span class="material-symbols-outlined text-[20px]" data-icon="headset_mic">headset_mic</span>
-<span class="text-label-sm font-label-sm tracking-wider uppercase">Canais Diretos</span>
+<!-- Cabeçalho Contato em Painel Contornado -->
+<div class="max-w-3xl mb-10 bg-[#F1F5F9] border-2 border-[#CBD5E1] p-6 sm:p-8 rounded-2xl shadow-sm">
+<div class="inline-flex items-center gap-1.5 text-primary mb-2 bg-[#E2E8F0] px-2.5 py-1 rounded-md border border-[#CBD5E1]">
+<span class="material-symbols-outlined text-[18px]" data-icon="headset_mic">headset_mic</span>
+<span class="text-xs font-bold tracking-wider uppercase text-primary">Canais Diretos</span>
 </div>
 <h2 class="font-headline-xl text-headline-xl text-[#0F172A] tracking-tight mb-2">
-            Fale com Nossos Vendedores&nbsp;</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Fale com Nossos Vendedores
+          </h2>
+<p class="font-body-lg text-body-lg text-[#334155]">
             Atendimento especializado para esclarecimento de dúvidas técnicas sobre catálise, compatibilidade de substratos e orçamentos para fornecimento contínuo.
           </p>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
 <!-- Bloco WhatsApp -->
-<div class="p-6 bg-[#F8FAFC] border border-[#CBD5E1] rounded hover:border-[#22C55E] transition-colors flex flex-col justify-between">
+<div class="p-6 bg-[#F1F5F9] border-2 border-[#CBD5E1] rounded-2xl hover:border-[#22C55E] transition-all flex flex-col justify-between shadow-sm">
 <div>
-<div class="w-10 h-10 rounded bg-[#DCFCE7] text-[#15803D] flex items-center justify-center mb-4">
+<div class="w-10 h-10 rounded-xl bg-[#DCFCE7] text-[#15803D] flex items-center justify-center mb-4 border border-[#86EFAC]">
 <span class="material-symbols-outlined text-[24px]" data-icon="chat">chat</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-[#0F172A] mb-1">WhatsApp Comercial</h3>
 <p class="font-body-sm text-body-sm text-[#64748B] mb-4">Cotações rápidas e envio de lista de pedidos.</p>
-<a data-bind-wa class="font-body-md-bold text-body-md-bold text-[#15803D] text-lg block mb-4" href="https://wa.me/5511987654321">
-                (11) 98765-4321
+<a data-bind-wa class="font-body-md-bold text-body-md-bold text-[#15803D] text-lg block mb-4" href="https://wa.me/5511992704530">
+                (11) 99270-4530
               </a>
 </div>
-<a id="contact-cta-whatsapp" data-wa-origin="Seção Contato" data-wa-product="Atendimento Comercial WhatsApp" data-wa-msg="Olá! Gostaria de falar com o atendimento comercial da J&J Distribuição para cotações e compras." class="w-full inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white py-2.5 px-3 rounded text-label-lg font-label-lg transition-colors cursor-pointer" href="https://wa.me/5511987654321" rel="noopener noreferrer" target="_blank">
+<a id="contact-cta-whatsapp" data-wa-origin="Seção Contato" data-wa-product="Atendimento Comercial WhatsApp" data-wa-msg="Olá! Gostaria de falar com o atendimento comercial da J&J Distribuição para cotações e compras." class="w-full inline-flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white py-2.5 px-3 rounded-xl text-label-lg font-label-lg transition-colors cursor-pointer shadow-sm" href="https://wa.me/5511992704530" rel="noopener noreferrer" target="_blank">
               Iniciar Conversa
             </a>
 </div>
 <!-- Bloco Telefone Fixo -->
-<div class="p-6 bg-[#F8FAFC] border border-[#CBD5E1] rounded flex flex-col justify-between">
+<div class="p-6 bg-[#F1F5F9] border-2 border-[#CBD5E1] rounded-2xl hover:border-secondary transition-all flex flex-col justify-between shadow-sm">
 <div>
-<div class="w-10 h-10 rounded bg-[#EFF6FF] text-secondary flex items-center justify-center mb-4">
+<div class="w-10 h-10 rounded-xl bg-[#EFF6FF] text-secondary flex items-center justify-center mb-4 border border-[#BFDBFE]">
 <span class="material-symbols-outlined text-[24px]" data-icon="call">call</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-[#0F172A] mb-1">Telefone de Balcão</h3>
 <p class="font-body-sm text-body-sm text-[#64748B] mb-4">Central de atendimento direto da loja.</p>
-<a data-bind-phone class="font-body-md-bold text-body-md-bold text-[#0F172A] text-lg block mb-4" href="tel:1134567890">
-                (11) 3456-7890
+<a data-bind-phone class="font-body-md-bold text-body-md-bold text-[#0F172A] text-lg block mb-4" href="tel:11992704530">
+                (11) 99270-4530
               </a>
 </div>
-<a class="w-full inline-flex items-center justify-center gap-2 border border-[#CBD5E1] hover:bg-white text-[#0F172A] py-2.5 px-3 rounded text-label-lg font-label-lg transition-colors" href="tel:1134567890">
+<a class="w-full inline-flex items-center justify-center gap-2 border-2 border-[#CBD5E1] bg-white hover:bg-[#F8FAFC] text-[#0F172A] py-2.5 px-3 rounded-xl text-label-lg font-label-lg transition-colors shadow-xs" href="tel:11992704530">
               Ligar Agora
             </a>
 </div>
 <!-- Bloco E-mail -->
-<div class="p-6 bg-[#F8FAFC] border border-[#CBD5E1] rounded flex flex-col justify-between">
+<div class="p-6 bg-[#F1F5F9] border-2 border-[#CBD5E1] rounded-2xl hover:border-primary transition-all flex flex-col justify-between shadow-sm">
 <div>
-<div class="w-10 h-10 rounded bg-[#F3E8FF] text-primary flex items-center justify-center mb-4">
+<div class="w-10 h-10 rounded-xl bg-[#F3E8FF] text-primary flex items-center justify-center mb-4 border border-[#DDD6FE]">
 <span class="material-symbols-outlined text-[24px]" data-icon="mail">mail</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-[#0F172A] mb-1">E-mail Comercial</h3>
@@ -455,14 +469,14 @@
                 vendas@jjdistribuicao.com.br
               </a>
 </div>
-<a class="w-full inline-flex items-center justify-center gap-2 border border-[#CBD5E1] hover:bg-white text-[#0F172A] py-2.5 px-3 rounded text-label-lg font-label-lg transition-colors" href="mailto:vendas@jjdistribuicao.com.br">
+<a class="w-full inline-flex items-center justify-center gap-2 border-2 border-[#CBD5E1] bg-white hover:bg-[#F8FAFC] text-[#0F172A] py-2.5 px-3 rounded-xl text-label-lg font-label-lg transition-colors shadow-xs" href="mailto:vendas@jjdistribuicao.com.br">
               Enviar Mensagem
             </a>
 </div>
 <!-- Bloco Horário -->
-<div class="p-6 bg-[#F8FAFC] border border-[#CBD5E1] rounded flex flex-col justify-between">
+<div class="p-6 bg-[#F1F5F9] border-2 border-[#CBD5E1] rounded-2xl flex flex-col justify-between shadow-sm">
 <div>
-<div class="w-10 h-10 rounded bg-[#FEF3C7] text-[#B45309] flex items-center justify-center mb-4">
+<div class="w-10 h-10 rounded-xl bg-[#FEF3C7] text-[#B45309] flex items-center justify-center mb-4 border border-[#FDE68A]">
 <span class="material-symbols-outlined text-[24px]" data-icon="schedule">schedule</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-[#0F172A] mb-1">Horário de Funcionamento</h3>
@@ -472,76 +486,70 @@
 <span class="font-semibold block text-[#0F172A]">Segunda a Sexta:</span>
                   07h30 às 18h00
                 </div>
-
 </div>
-</div>
-<div class="pt-4 border-t border-[#E2E8F0]">
-
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- E. SEÇÃO 4: LOCALIZAÇÃO (id="localizacao") -->
-<section class="py-12 lg:py-16 bg-[#F8FAFC]" id="localizacao">
+<!-- E. SEÇÃO 4: LOCALIZAÇÃO (Sem o bloco near_me, mapa de Jundiaí e contornos) -->
+<section class="py-12 lg:py-16 bg-white" id="localizacao">
 <div class="max-w-[1280px] mx-auto px-4 lg:px-8">
-<div class="max-w-2xl mb-10">
-<div class="inline-flex items-center gap-1.5 text-primary mb-2">
+<!-- Cabeçalho Localização em Painel Contornado -->
+<div class="max-w-3xl mb-10 bg-[#F1F5F9] border-2 border-[#CBD5E1] p-6 sm:p-8 rounded-2xl shadow-sm">
+<div class="inline-flex items-center gap-1.5 text-primary mb-2 bg-[#E2E8F0] px-2.5 py-1 rounded-md border border-[#CBD5E1]">
 <span class="material-symbols-outlined text-[20px]" data-icon="location_on">location_on</span>
-<span class="text-label-sm font-label-sm tracking-wider uppercase">Ponto Físico</span>
+<span class="text-xs font-bold tracking-wider uppercase text-primary">Ponto Físico</span>
 </div>
 <h2 class="font-headline-xl text-headline-xl text-[#0F172A] tracking-tight mb-2">
             Venha nos Visitar
           </h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-            Nossa estrutura está equipada para retirada rápida de materiais, teste de cores e consultoria imediata de balcão.
+<p class="font-body-lg text-body-lg text-[#334155]">
+            Nossa estrutura em Jundiaí está equipada para retirada rápida de materiais, teste de cores e consultoria imediata de balcão.
           </p>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<!-- Informações de Acesso -->
-<div class="lg:col-span-5 bg-white p-6 lg:p-8 rounded border border-[#CBD5E1] shadow-sm">
-<h3 class="font-headline-sm text-headline-sm text-[#0F172A] mb-4">
-              J&amp;J Distribuição&nbsp;</h3>
+<!-- Informações de Acesso (Escurecido e com contorno) -->
+<div class="lg:col-span-5 bg-[#F1F5F9] p-6 lg:p-8 rounded-2xl border-2 border-[#CBD5E1] shadow-sm">
+<h3 class="font-headline-sm text-headline-sm text-[#0F172A] mb-4 font-bold flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#22C55E]"></span>
+              J&amp;J Distribuição
+            </h3>
 <div class="space-y-4 mb-6">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-[22px] mt-0.5" data-icon="pin_drop">pin_drop</span>
+<div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-[#CBD5E1]">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5" data-icon="pin_drop">pin_drop</span>
 <div>
-<span class="font-body-md-bold text-body-md-bold text-[#0F172A] block">Endereço Completo:</span>
-<p class="font-body-md text-body-md text-on-surface-variant">RUA 000</p>
+<span class="font-body-md-bold text-body-md-bold text-[#0F172A] block">Endereço da Loja:</span>
+<p class="font-body-md text-body-md text-[#334155] leading-snug">
+                    Rua Luís Gonzaga M. Camargo, Cidade Santos Dumont<br>
+                    Jundiaí - SP, CEP: 13214-410
+                  </p>
 </div>
 </div>
-<div class="flex items-start gap-3">
-
+<div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-[#CBD5E1]">
+<span class="material-symbols-outlined text-[#22C55E] text-[24px] mt-0.5" data-icon="storefront">storefront</span>
 <div>
-
-
+<span class="font-body-md-bold text-body-md-bold text-[#0F172A] block">Retirada no Balcão:</span>
+<p class="font-body-md text-body-md text-[#334155]">Estacionamento próprio para clientes e oficinas parceiras.</p>
 </div>
 </div>
-
 </div>
-<a class="w-full inline-flex items-center justify-center gap-2 bg-secondary hover:bg-[#003ea8] text-white py-3 px-4 rounded text-label-lg font-label-lg shadow-sm transition-all duration-150" href="https://maps.google.com/?q=São+Paulo" rel="noopener noreferrer" target="_blank">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-secondary hover:bg-[#003ea8] text-white py-3.5 px-4 rounded-xl text-label-lg font-label-lg shadow-sm transition-all duration-150 cursor-pointer" href="https://maps.app.goo.gl/jHMQ6cLbsB6BQ8bz8" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[20px]" data-icon="map">map</span>
               Abrir no Google Maps / Como Chegar
             </a>
 </div>
-<!-- Mapa Container Estilizado -->
+<!-- Mapa Container (Limpo, sem o bloco near_me solicitado) -->
 <div class="lg:col-span-7">
-<div class="rounded border border-[#CBD5E1] bg-white shadow-sm overflow-hidden">
-<div class="bg-[#F1F5F9] px-4 py-3 border-b border-[#CBD5E1] flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[#64748B] text-[18px]" data-icon="near_me">near_me</span>
-<span class="font-body-md-bold text-body-md-bold text-[#334155]">Área Comercial &amp; Polo de Oficinas</span>
-</div>
-<span class="text-label-sm font-label-sm text-[#64748B]">São Paulo - SP</span>
-</div>
-<!-- Mapa Interativo / Iframe Google Maps -->
-<div class="relative w-full h-[280px] sm:h-[360px] bg-[#E2E8F0]">
-<iframe class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117061.64966236962!2d-46.702970717282715!3d-23.548943343360216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58334460f7df%3A0x67ff0c48b26588d9!2sS%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" title="Localização J&amp;J Distribuição">
+<div class="rounded-2xl border-2 border-[#CBD5E1] bg-white shadow-sm overflow-hidden relative">
+<!-- Mapa Interativo / Iframe Google Maps focado em Jundiaí -->
+<div class="relative w-full h-[320px] sm:h-[400px] bg-[#E2E8F0]">
+<iframe class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=-23.1664731,-46.9126508&amp;hl=pt-BR&amp;z=17&amp;output=embed" title="Localização J&amp;J Distribuição">
 </iframe>
-<div class="absolute bottom-3 right-3 bg-white/95 px-3 py-1.5 rounded border border-[#CBD5E1] text-label-sm font-label-sm shadow-sm flex items-center gap-1.5 pointer-events-none">
+<div class="absolute bottom-3 right-3 bg-white/95 px-3 py-1.5 rounded-lg border border-[#CBD5E1] text-label-sm font-label-sm shadow-md flex items-center gap-1.5 pointer-events-none">
 <span class="material-symbols-outlined text-primary text-[16px]" data-icon="business">business</span>
-                  Galpão de Distribuição J&amp;J
-                </div>
+<span class="font-semibold text-[#0F172A]">J&amp;J Distribuição - Jundiaí/SP</span>
+</div>
 </div>
 </div>
 </div>
@@ -566,12 +574,12 @@
 <div class="md:col-span-4">
 <span class="text-label-md font-label-md font-bold text-white uppercase tracking-wider block mb-3">Atendimento &amp; Endereço</span>
 <p class="text-body-sm font-body-sm text-[#CBD5E1] mb-2">
-            Av. das Indústrias Automotivas, 1420 - Galpão 03<br>
-            São Paulo/SP - CEP: 03000-000
+            Rua Luís Gonzaga M. Camargo, Cidade Santos Dumont<br>
+            Jundiaí/SP - CEP: 13214-410
           </p>
 <p class="text-body-sm font-body-sm text-[#CBD5E1]">
-            WhatsApp: <a href="https://wa.me/5511987654321" data-bind-wa class="hover:text-white transition-colors">(11) 98765-4321</a><br>
-            Telefone Fixo: <a href="tel:1134567890" data-bind-phone class="hover:text-white transition-colors">(11) 3456-7890</a>
+            WhatsApp: <a href="https://wa.me/5511992704530" data-bind-wa class="hover:text-white transition-colors">(11) 99270-4530</a><br>
+            Telefone: <a href="tel:11992704530" data-bind-phone class="hover:text-white transition-colors">(11) 99270-4530</a>
           </p>
 </div>
 <div class="md:col-span-3">
