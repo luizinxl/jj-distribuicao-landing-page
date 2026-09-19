@@ -1,0 +1,122 @@
+{
+  "create_local.ps1": {
+    "mtime": 1789793812.2848191,
+    "seen": 1789793906.7040756,
+    "ast_hash": "6fa413f0fc51b197e3c7d7a072865d07",
+    "semantic_hash": ""
+  },
+  "download_assets.ps1": {
+    "mtime": 1789793785.666453,
+    "seen": 1789793906.7040803,
+    "ast_hash": "33ff40518ec4f0386b4ffcd337b5e44d",
+    "semantic_hash": ""
+  },
+  "index-local.html": {
+    "mtime": 1789794669.8714895,
+    "seen": 1789794675.0438728,
+    "ast_hash": "1d13de138bef12fadce1c0ef8abe9683",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1789794664.407027,
+    "seen": 1789794675.043874,
+    "ast_hash": "9a0a5812abb8b3585a0644a3c032c5c8",
+    "semantic_hash": ""
+  },
+  "images/equipamentos-polimento.png": {
+    "mtime": 1789793791.291675,
+    "seen": 1789793906.7040844,
+    "ast_hash": "7225b50cf7a829c26a5dd1b027219d3c",
+    "semantic_hash": ""
+  },
+  "images/hero-balcao.png": {
+    "mtime": 1789793792.1770442,
+    "seen": 1789793906.7040856,
+    "ast_hash": "d6dab33d3fe35de625718dc4a1013147",
+    "semantic_hash": ""
+  },
+  "images/lixas-abrasivos.png": {
+    "mtime": 1789793793.3567946,
+    "seen": 1789793906.7040865,
+    "ast_hash": "f96b23af82c1292df7037388a404ed73",
+    "semantic_hash": ""
+  },
+  "images/logo.png": {
+    "mtime": 1789793791.474525,
+    "seen": 1789793906.7040875,
+    "ast_hash": "b638e6dd4fa6cf963d6d63e0b6d0cca7",
+    "semantic_hash": ""
+  },
+  "images/preparacao-massas.png": {
+    "mtime": 1789793789.7911959,
+    "seen": 1789793906.7040882,
+    "ast_hash": "c4e2a557e5463c0439849cdd6082e88d",
+    "semantic_hash": ""
+  },
+  "images/stitch-asset-abrasives.png": {
+    "mtime": 1789793792.672666,
+    "seen": 1789793906.7040896,
+    "ast_hash": "f96b23af82c1292df7037388a404ed73",
+    "semantic_hash": ""
+  },
+  "images/stitch-asset-bodyfiller.png": {
+    "mtime": 1789793789.055975,
+    "seen": 1789793906.7040904,
+    "ast_hash": "c4e2a557e5463c0439849cdd6082e88d",
+    "semantic_hash": ""
+  },
+  "images/stitch-asset-counter.png": {
+    "mtime": 1789793793.6546493,
+    "seen": 1789793906.7040913,
+    "ast_hash": "d6dab33d3fe35de625718dc4a1013147",
+    "semantic_hash": ""
+  },
+  "images/stitch-asset-paintcans.png": {
+    "mtime": 1789793792.4059422,
+    "seen": 1789793906.7040925,
+    "ast_hash": "424bcdb40e6d54dd0e62ac45d97a5869",
+    "semantic_hash": ""
+  },
+  "images/stitch-asset-spraygun.png": {
+    "mtime": 1789793790.1559691,
+    "seen": 1789793906.7040932,
+    "ast_hash": "7225b50cf7a829c26a5dd1b027219d3c",
+    "semantic_hash": ""
+  },
+  "images/stitch-asset-whatsapp-ref.jpg": {
+    "mtime": 1789793790.5065298,
+    "seen": 1789793906.7040942,
+    "ast_hash": "b638e6dd4fa6cf963d6d63e0b6d0cca7",
+    "semantic_hash": ""
+  },
+  "images/tintas-vernizes.png": {
+    "mtime": 1789793794.3078382,
+    "seen": 1789793906.7040956,
+    "ast_hash": "424bcdb40e6d54dd0e62ac45d97a5869",
+    "semantic_hash": ""
+  },
+  "screenshot.png": {
+    "mtime": 1789793752.0064585,
+    "seen": 1789793906.7040963,
+    "ast_hash": "3569e29a38cc94ddc2efe07de12a20b0",
+    "semantic_hash": ""
+  },
+  "leads.json": {
+    "mtime": 1789794527.2917347,
+    "seen": 1789794571.973401,
+    "ast_hash": "a0f614567c9dcaecb44ae21866a3cb3b",
+    "semantic_hash": ""
+  },
+  "script.js": {
+    "mtime": 1789794654.99672,
+    "seen": 1789794675.0438693,
+    "ast_hash": "475df8276843c1f78543ace6d14c38dd",
+    "semantic_hash": ""
+  },
+  "server.js": {
+    "mtime": 1789794345.1729329,
+    "seen": 1789794403.7030814,
+    "ast_hash": "6a5517b03b6634712c17dee8603e37b9",
+    "semantic_hash": ""
+  }
+}

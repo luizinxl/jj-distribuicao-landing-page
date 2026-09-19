@@ -1,0 +1,10 @@
+# Dependências
+node_modules/
+
+# Dados locais e logs
+leads.json
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
