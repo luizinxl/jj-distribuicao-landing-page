@@ -117,40 +117,38 @@
   </script>
 </head>
 <body class="bg-white text-on-surface antialiased font-body-md text-body-md min-h-screen flex flex-col overflow-x-hidden selection:bg-[#22C55E] selection:text-white">
-<!-- A. HEADER FIXO (TopNavBar JSON-aligned & Mobile First) -->
-<header class="bg-white sticky top-0 z-50 shadow-md border-b-2 border-[#CBD5E1]">
-<div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-4 lg:px-8 py-2.5 min-h-[76px]">
-<!-- Logo & Nome da Loja em Grande Destaque -->
-<a class="flex items-center gap-3 sm:gap-4 group cursor-pointer" href="#home" title="J&J Distribuição - Início">
-<div class="p-1 sm:p-1.5 bg-white rounded-xl border-2 border-[#CBD5E1] shadow-xs group-hover:border-primary transition-all duration-200">
-<img alt="J&amp;J Distribuição Logo" class="h-12 sm:h-14 lg:h-16 w-auto object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBExGI_OzMbMI0OU5LGTcQ71q5syDLByYZ5vnCJnlJA8EevnPa4lHef7l2CaJX5b9uU_T1OEKnSQYY7TC8h9fYO4MgPNKaVeVVWbeu2feWU8QyhuOgl9DIAWvj8lDxLShFUXAjZzZJlMuTActjrLyG0QyAPrHITlMEmz1FODYJMViYIfmxnuAamRtd2yQcaz_v3xt8gMiuBLQrX_D87kUZMw79BfBxVkNotvDborK45wfChqeoKmMzXPhiqx0kq_0">
-</div>
+<!-- A. HEADER FIXO (TopNavBar Compacto & Mobile First) -->
+<header class="bg-white sticky top-0 z-50 shadow-sm border-b border-[#CBD5E1]">
+<div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-4 lg:px-8 h-16">
+<!-- Logo & Nome da Loja sem Borda -->
+<a class="flex items-center gap-2.5 sm:gap-3 group cursor-pointer" href="#home" title="J&J Distribuição - Início">
+<img alt="J&amp;J Distribuição Logo" class="h-10 sm:h-11 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBExGI_OzMbMI0OU5LGTcQ71q5syDLByYZ5vnCJnlJA8EevnPa4lHef7l2CaJX5b9uU_T1OEKnSQYY7TC8h9fYO4MgPNKaVeVVWbeu2feWU8QyhuOgl9DIAWvj8lDxLShFUXAjZzZJlMuTActjrLyG0QyAPrHITlMEmz1FODYJMViYIfmxnuAamRtd2yQcaz_v3xt8gMiuBLQrX_D87kUZMw79BfBxVkNotvDborK45wfChqeoKmMzXPhiqx0kq_0">
 <div class="flex flex-col justify-center">
-<span class="font-extrabold text-xl sm:text-2xl lg:text-3xl tracking-tight text-[#0F172A] leading-none flex items-center gap-1.5">
+<span class="font-extrabold text-lg sm:text-xl tracking-tight text-[#0F172A] leading-none flex items-center gap-1">
 J&amp;J <span class="text-primary font-black">DISTRIBUIÇÃO</span>
 </span>
-<span class="text-[10px] sm:text-xs font-bold text-[#64748B] tracking-wider uppercase mt-1">
+<span class="text-[9px] sm:text-[10px] font-bold text-[#64748B] tracking-wider uppercase mt-0.5">
 Insumos para Funilaria &amp; Pintura
 </span>
 </div>
 </a>
 <!-- Desktop Navigation Links (Anchor Scroll) -->
 <nav class="hidden md:flex items-center space-x-6">
-<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors" href="#home">Início</a>
-<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors" href="#produtos">Produtos</a>
-<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors" href="#contato">Contato</a>
-<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors" href="#localizacao">Localização</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors text-sm" href="#home">Início</a>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors text-sm" href="#produtos">Produtos</a>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors text-sm" href="#contato">Contato</a>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors text-sm" href="#localizacao">Localização</a>
 </nav>
 <!-- Actions: WhatsApp CTA + Mobile Menu Button -->
 <div class="flex items-center gap-2 sm:gap-3">
-<a id="header-cta-whatsapp" data-wa-origin="Header Superior" data-wa-product="Geral" data-wa-msg="Olá! Gostaria de solicitar um orçamento com a J&J Distribuição." class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg text-xs sm:text-label-lg font-label-lg shadow-sm transition-all duration-150 active:scale-95 cursor-pointer" href="https://wa.me/5511992704530" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[18px] sm:text-[20px]" data-icon="chat">chat</span>
+<a id="header-cta-whatsapp" data-wa-origin="Header Superior" data-wa-product="Geral" data-wa-msg="Olá! Gostaria de solicitar um orçamento com a J&J Distribuição." class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold shadow-sm transition-all duration-150 active:scale-95 cursor-pointer" href="https://wa.me/5511992704530" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
 <span class="hidden sm:inline">Orçamento WhatsApp</span>
 <span class="sm:hidden">WhatsApp</span>
 </a>
 <!-- Mobile Menu Button (Hamburger) -->
-<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 text-[#0F172A] hover:text-primary rounded-lg border-2 border-[#CBD5E1] bg-white transition-colors focus:outline-none cursor-pointer" aria-label="Abrir menu de navegação" aria-expanded="false">
-<span class="material-symbols-outlined text-[24px]" id="mobile-menu-icon">menu</span>
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-9 h-9 text-[#0F172A] hover:text-primary rounded-lg border border-[#CBD5E1] bg-white transition-colors focus:outline-none cursor-pointer" aria-label="Abrir menu de navegação" aria-expanded="false">
+<span class="material-symbols-outlined text-[22px]" id="mobile-menu-icon">menu</span>
 </button>
 </div>
 </div>
