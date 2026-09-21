@@ -1,0 +1,20 @@
+{
+  "name": "jj-distribuicao-landing-page",
+  "version": "1.0.0",
+  "description": "J&J Distribuição - Landing Page for Automotive Bodywork and Painting Supplies",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "landing-page",
+    "automotive",
+    "distribution"
+  ],
+  "author": "J&J Distribuição",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
