@@ -266,83 +266,6 @@
       "norm_label": "\ud83d\udcbb tecnologias",
       "source_file": "README.md",
       "source_location": "L24"
-    },
-    {
-      "id": "vercel",
-      "label": "vercel.json",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "vercel.json",
-      "file_type": "code",
-      "norm_label": "vercel.json",
-      "source_file": "vercel.json",
-      "source_location": "L1"
-    },
-    {
-      "id": "vercel_builds",
-      "label": "builds",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "vercel.json",
-      "file_type": "code",
-      "norm_label": "builds",
-      "source_file": "vercel.json",
-      "source_location": "L3"
-    },
-    {
-      "id": "vercel_routes",
-      "label": "routes",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "vercel.json",
-      "file_type": "code",
-      "norm_label": "routes",
-      "source_file": "vercel.json",
-      "source_location": "L25"
-    },
-    {
-      "id": "vercel_version",
-      "label": "version",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "vercel.json",
-      "file_type": "code",
-      "norm_label": "version",
-      "source_file": "vercel.json",
-      "source_location": "L2"
-    },
-    {
-      "id": "api_config",
-      "label": "config.js",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "config.js",
-      "file_type": "code",
-      "norm_label": "config.js",
-      "source_file": "api/config.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "api_config_business_config",
-      "label": "BUSINESS_CONFIG",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "config.js",
-      "file_type": "code",
-      "norm_label": "business_config",
-      "source_file": "api/config.js",
-      "source_location": "L2"
-    },
-    {
-      "id": "api_leads",
-      "label": "leads.js",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "leads.js",
-      "file_type": "code",
-      "norm_label": "leads.js",
-      "source_file": "api/leads.js",
-      "source_location": "L1"
     }
   ],
   "links": [
@@ -380,17 +303,6 @@
       "context": "call",
       "source_file": "server.js",
       "source_location": "L121",
-      "weight": 1.0
-    },
-    {
-      "source": "api_config",
-      "target": "api_config_business_config",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "api/config.js",
-      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -590,41 +502,8 @@
       "source_file": "server.js",
       "source_location": "L7",
       "weight": 1.0
-    },
-    {
-      "source": "vercel",
-      "target": "vercel_version",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "vercel.json",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "vercel",
-      "target": "vercel_routes",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "vercel.json",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "vercel",
-      "target": "vercel_builds",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "vercel.json",
-      "source_location": "L3",
-      "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7f9718d3ba68f48d3958b9769b843553580125fa"
+  "built_at_commit": "885c1fe23285c9819c3e40c3d13685ef6857bab1"
 }

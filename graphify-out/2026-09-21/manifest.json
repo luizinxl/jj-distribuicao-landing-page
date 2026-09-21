@@ -18,9 +18,9 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1790027971.1592553,
-    "seen": 1790028016.1864743,
-    "ast_hash": "f35b0a5132f3b322f3dadb804b2067ec",
+    "mtime": 1789795669.7169762,
+    "seen": 1789795682.5079434,
+    "ast_hash": "b1b8d2c5db40c850534ed8b4e4b44229",
     "semantic_hash": ""
   },
   "images/equipamentos-polimento.png": {
@@ -117,60 +117,6 @@
     "mtime": 1789794925.7158258,
     "seen": 1789795079.803773,
     "ast_hash": "eb34775912b3850387c6796018476cdb",
-    "semantic_hash": ""
-  },
-  "api/config.js": {
-    "mtime": 1789832196.06208,
-    "seen": 1790027591.8298562,
-    "ast_hash": "676a92d6cc620f94c3b996b9f0d2118a",
-    "semantic_hash": ""
-  },
-  "api/leads.js": {
-    "mtime": 1789832211.910934,
-    "seen": 1790027591.8298633,
-    "ast_hash": "1e70433b461e7b935c4ca4c17bc8d048",
-    "semantic_hash": ""
-  },
-  "vercel.json": {
-    "mtime": 1789832344.9985304,
-    "seen": 1790027591.829885,
-    "ast_hash": "567e00f4ad5ab685155b2c3c229ba7e8",
-    "semantic_hash": ""
-  },
-  "images/car_polished_surface.jpg": {
-    "mtime": 1789966792.2720897,
-    "seen": 1790027591.8298943,
-    "ast_hash": "721362c8165c21d8167f9b7c1f8f7efb",
-    "semantic_hash": ""
-  },
-  "images/cat_abrasives.jpg": {
-    "mtime": 1790026911.6509535,
-    "seen": 1790027591.829897,
-    "ast_hash": "19d670842c10125f22572017be1b69b1",
-    "semantic_hash": ""
-  },
-  "images/cat_paint_varnish.jpg": {
-    "mtime": 1790026743.0085213,
-    "seen": 1790027591.829899,
-    "ast_hash": "353456c0a7d0f37a8cceb274827a6038",
-    "semantic_hash": ""
-  },
-  "images/cat_polishing.jpg": {
-    "mtime": 1790026980.938863,
-    "seen": 1790027591.8299007,
-    "ast_hash": "51cdaea0e1db8f898ded7bd6aacfcf6e",
-    "semantic_hash": ""
-  },
-  "images/cat_putty_prep.jpg": {
-    "mtime": 1790026859.158367,
-    "seen": 1790027591.8299026,
-    "ast_hash": "0817d3906f63b20e63a40e573176661c",
-    "semantic_hash": ""
-  },
-  "images/hero_industrial_shop.jpg": {
-    "mtime": 1789965240.5702696,
-    "seen": 1790027591.82991,
-    "ast_hash": "9731235ead6ecf02424c5664fbba80fe",
     "semantic_hash": ""
   }
 }
